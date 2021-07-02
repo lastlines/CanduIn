@@ -107,7 +107,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "☕ ᴜᴘᴅᴀᴛᴇ ☕", url=f"https://t.me/robotmusicupdate"
+                        "⚙️ ᴜᴘᴅᴀᴛᴇ ", url=f"https://t.me/robotmusicupdate"
                     )
                 ]
             ]
@@ -127,7 +127,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✍️ ᴅᴀꜰᴛᴀʀ ᴘᴇʀɪɴᴛᴀʜ ✍️", url="https://telegra.ph/ROBOT-04-23-2"
+                        "ᴅᴀꜰᴛᴀʀ ᴘᴇʀɪɴᴛᴀʜ ✍️", url="https://telegra.ph/ROBOT-04-23-2"
                     )
                 ]
             ]
