@@ -7,27 +7,28 @@
   "env": {
     "SESSION_NAME": {
       "description": "Pyrogram session string",
-      "required": true
+      "required": true,
     },
     "BOT_TOKEN": {
       "description": "A bot token from @BotFather",
-      "required": true
+      "required": true,
     },
     "BOT_NAME": {
       "description": "Your MusicPlayer Bot Name.",
       "required": false,
+      "value": "𝐂𝐚𝐧𝐝𝐮𝐌𝐮𝐬𝐢𝐜"
     },
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
-      "required": true
+     "required": true,
     },
     "API_HASH": {
       "description": "App hash from my.telegram.org/apps",
-      "required": true
+     "required": true,
     },
     "SUDO_USERS": {
       "description": "List of user IDs counted as admin everywhere (separated by space).",
-      "required": true
+      "required": true,
     },
     "DURATION_LIMIT": {
       "description": "Max audio duration limit for downloads (minutes).",
