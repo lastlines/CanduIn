@@ -20,7 +20,7 @@ from helpers.gets import get_url, get_file_name
 import aiofiles
 import ffmpeg
 from PIL import Image, ImageFont, ImageDraw
-
+from config import que
 
 def transcode(filename):
     ffmpeg.input(filename).output("input.raw", format='s16le', acodec='pcm_s16le', ac=2, ar='48k').overwrite_output().run() 
