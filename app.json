@@ -8,27 +8,32 @@
     "SESSION_NAME": {
       "description": "Pyrogram session string",
       "required": true
+      "value": "BQCszzaHT6yKWcTrTRyKNwXQxUn47buU2xjtpEf9uK9HNKs_AwEkCpoJ6G5g63lB4eMyQyCtRt1Cbu7G1wLgAAQM1itwMn3jSwnBOGBxoZSLl01_24e01Y1QcMoq3M-vfRR2ZNKkTKbSD6Ay4fx_-uEauznoXLmddmpZbx0SulDHmE4bivX2I3go26t-bUaFOmqLfIIPiRmdSbAFYDTfWE2D7f5vX2pfbQ5kj7CXqSOizUDcSby_1Tdf2ELeRKqsZVRJw3sgMGtHSF8UeownNspVyuDixPisYZAYBpDGwsz0CorSMsgeGndDimzU5Ct8cvNKr6mHyl1tBfPEgjmTmcktZxFkIQA"
     },
     "BOT_TOKEN": {
       "description": "A bot token from @BotFather",
       "required": true
+      "value": "1891803970:AAGaUiAXmgZgMe-Y1gA8KZKNY_EHnawCsXM"
     },
     "BOT_NAME": {
       "description": "Your MusicPlayer Bot Name.",
       "required": false,
-      "value": ""
+      "value": "HELLBOT"
     },
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
       "required": true
+      "value": "6732733"
     },
     "API_HASH": {
       "description": "App hash from my.telegram.org/apps",
       "required": true
+      "value": "f4428312dc4346d351e14b153ff1834c"
     },
     "SUDO_USERS": {
       "description": "List of user IDs counted as admin everywhere (separated by space).",
       "required": true
+      "value": "1729192993"
     },
     "DURATION_LIMIT": {
       "description": "Max audio duration limit for downloads (minutes).",
