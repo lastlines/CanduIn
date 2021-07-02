@@ -82,6 +82,49 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     os.remove("temp.png")
     os.remove("background.png")
 
+@Client.on_message(
+    filters.command("playlist")
+    & filters.group
+    & ~ filters.edited
+)
+async def playlist(client, message):
+    global que
+    queue = que.get(message.chat.id)
+    if not queue:
+        await message.reply_text('❌ Tidak Ada Playlist')
+    temp = []
+    for t in queue:
+        temp.append(t)
+    now_playing = temp[0][0]
+    by = temp[0][1].mention(style='md')
+    msg = "**Lagu Yang Sedang Diputar** di {}".format(message.chat.title)
+    msg += "\n\nJudul : "+ now_playing
+    msg += "\nRequest Dari : "+by
+    temp.pop(0)
+    if temp:
+        msg += '\n───────────────────────────'
+        msg += '\n**Antrian Lagu :**'
+        for song in temp:
+            name = song[0]
+            usr = song[1].mention(style='md')
+            msg += f'\n\nJudul : {name}'
+            msg += f'\nRequest Dari : {usr}\n'
+    await message.reply_text(msg)    
+    
+
+@Client.on_message(
+    filters.command("current")
+    & filters.group
+    & ~ filters.edited
+)
+async def ee(client, message):
+    queue = que.get(message.chat.id)
+    stats = updated_stats(message.chat, queue)
+    if stats:
+        await message.reply(stats)              
+    else:
+        await message.reply('Tidak Ada Music')    
+    
 
 
 
