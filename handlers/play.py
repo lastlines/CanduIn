@@ -1,7 +1,10 @@
 import os
 from os import path
-from pyrogram import Client, filters
-from pyrogram.types import Message, Voice, InlineKeyboardButton, InlineKeyboardMarkup
+from typing import Dict
+from pyrogram import Client, filters, emoji
+from pyrogram.types import Message, Voice, InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
+from pyrogram.errors.exceptions.bad_request_400 import ChatAdminRequired
+from pyrogram.errors.exceptions.flood_420 import FloodWait
 from typing import Callable, Coroutine, Dict, List, Tuple, Union
 from pyrogram.errors import UserAlreadyParticipant
 from callsmusic import callsmusic, queues
@@ -14,14 +17,21 @@ from youtube_search import YoutubeSearch
 import converter
 from downloaders import youtube
 from config import DURATION_LIMIT
-from helpers.filters import command
-from helpers.decorators import errors
+from helpers.filters import command, other_filters
+from helpers.decorators import errors, , authorized_users_only
 from helpers.errors import DurationLimitError
 from helpers.gets import get_url, get_file_name
 import aiofiles
 import ffmpeg
 from PIL import Image, ImageFont, ImageDraw
 from config import que
+from cache.admins import admins as a
+import traceback
+import sys
+import json
+import wget
+chat_id = None
+
 
 def transcode(filename):
     ffmpeg.input(filename).output("input.raw", format='s16le', acodec='pcm_s16le', ac=2, ar='48k').overwrite_output().run() 
