@@ -2,6 +2,7 @@ import os
 from os import path
 from pyrogram import Client, filters
 from pyrogram.types import Message, Voice, InlineKeyboardButton, InlineKeyboardMarkup
+from typing import Callable, Coroutine, Dict, List, Tuple, Union
 from pyrogram.errors import UserAlreadyParticipant
 from callsmusic import callsmusic, queues
 from callsmusic.callsmusic import client as USER
@@ -310,6 +311,7 @@ async def play(_, message: Message):
   
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         position = await queues.put(message.chat.id, file=file_path)
+        qeue = que.get(message.chat.id)
         await message.reply_photo(
         photo="final.png", 
         caption="📋 **Judul :** {}\n**⏱️ Durasi :** {} \n#️⃣ **Antrian :** {}".format(
@@ -319,6 +321,9 @@ async def play(_, message: Message):
         os.remove("final.png")
         return await lel.delete()
     else:
+        chat_id = message.chat.id
+        que[chat_id] = []
+        qeue = que.get(message.chat.id)
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
         await message.reply_photo(
         photo="final.png",
