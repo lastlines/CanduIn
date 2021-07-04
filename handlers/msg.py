@@ -18,6 +18,8 @@ import os
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 class Messages():
+        START_MSG = "🎶 **Hello Friends**, [{}](tg://user?id={}) 👏\nSaya 𝐑𝐨𝐛𝐨𝐭𝐌𝐮𝐬𝐢𝐜𝐁𝐨𝐭, Saya akan membantumu **memutar music** di Voice Chat Telegram Groups & Channel, dengan **fitur-fitur** yang menarik.\n\n❗Ketik /help untuk melihat **panduan pemakaiannya**.\n❗Ketik /start untuk **memuat ulang**.\n\n───────────────────────────────────\n\n𝑺𝒆𝒎𝒖𝒂 𝒐𝒓𝒂𝒏𝒈 𝒑𝒂𝒔𝒕𝒊 𝒎𝒂𝒕𝒊, 𝒕𝒂𝒑𝒊 𝒕𝒊𝒅𝒂𝒌 𝒔𝒆𝒎𝒖𝒂 𝒐𝒓𝒂𝒏𝒈 𝒅𝒂𝒑𝒂𝒕 𝒎𝒆𝒎𝒃𝒆𝒓𝒊 𝒂𝒓𝒕𝒊. 𝑷𝒂𝒔𝒕𝒊𝒌𝒂𝒏 𝒉𝒊𝒅𝒖𝒑𝒎𝒖 𝒃𝒆𝒓𝒂𝒓𝒕𝒊/𝒃𝒆𝒓𝒎𝒂𝒏𝒇𝒂𝒂𝒕 𝒖𝒏𝒕𝒖𝒌 𝒐𝒓𝒂𝒏𝒈 𝒍𝒂𝒊𝒏\n\n───────────────────────────────────\n\n❃ **Manage by :  [°ᴹᴿ° | ℝ𝕆𝔹𝕆𝕋](https://t.me/justthetech)  ☕\n❃ Support dengan doa aja guys! Thanks!\n❃ NB : Maaf jika ada kekurangan didalam bot ini**"
+
         HELP_MSG = [
         ".",
 f"""
