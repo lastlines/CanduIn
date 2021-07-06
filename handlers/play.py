@@ -205,7 +205,7 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("☕ ᴜᴘᴅᴀᴛᴇ", url="https://t.me/robotmusicupdate"),
+                    InlineKeyboardButton("☕ ᴜᴘᴅᴀᴛᴇ", url="https://t.me/robotprojectx"),
                     InlineKeyboardButton("ᴏᴡɴᴇʀ ☕", url="https://t.me/justthetech"),
                 ],
                 [InlineKeyboardButton(text="❌", callback_data="cls")],
@@ -242,7 +242,7 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                    InlineKeyboardButton("☕ ᴜᴘᴅᴀᴛᴇ", url="https://t.me/robotmusicupdate"),
+                    InlineKeyboardButton("☕ ᴜᴘᴅᴀᴛᴇ", url="https://t.me/robotprojectx"),
                     InlineKeyboardButton("ᴏᴡɴᴇʀ ☕", url="https://t.me/justthetech"),
                     ],
                     [InlineKeyboardButton(text="❌", callback_data="cls")],
@@ -256,7 +256,7 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                     [
                         [
-                        InlineKeyboardButton("☕ ᴜᴘᴅᴀᴛᴇ", url="https://t.me/robotmusicupdate"),
+                        InlineKeyboardButton("☕ ᴜᴘᴅᴀᴛᴇ", url="https://t.me/robotprojectx"),
                         InlineKeyboardButton("ᴏᴡɴᴇʀ ☕", url="https://t.me/justthetech"),
                         ],
                         [InlineKeyboardButton(text="❌", callback_data="cls")],
@@ -305,7 +305,7 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
                 [
                     [
-                    InlineKeyboardButton("☕ ᴜᴘᴅᴀᴛᴇ", url="https://t.me/robotmusicupdate"),
+                    InlineKeyboardButton("☕ ᴜᴘᴅᴀᴛᴇ", url="https://t.me/robotprojectx"),
                     InlineKeyboardButton("ᴏᴡɴᴇʀ ☕", url="https://t.me/justthetech"),
                     ],
                     [InlineKeyboardButton(text="❌", callback_data="cls")],
