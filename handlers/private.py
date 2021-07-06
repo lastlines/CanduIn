@@ -34,7 +34,7 @@ def _start(client, message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "☕ ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/robotmusicupdate"), 
+                        "☕ ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/robotprojectx"), 
                     InlineKeyboardButton(
                         "ᴏᴡɴᴇʀ ☕", url=f"https://t.me/justthetech")
                 ],
@@ -77,7 +77,7 @@ def map(pos):
         url = f"https://t.me/candumusic_bot"
         button = [
             [InlineKeyboardButton('☕ ᴏᴡɴᴇʀ', url=f"https://t.me/justthetech"), 
-             InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ☕', url=f"https://t.me/robotmusicupdate")
+             InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ☕', url=f"https://t.me/robotprojectx")
             ], 
             [InlineKeyboardButton(text = '𝙉𝙀𝙓𝙏 ▶', callback_data = "help+2")]
                 ] 
@@ -85,7 +85,7 @@ def map(pos):
         url = f"https://t.me/candumusic_bot"
         button = [
                     [InlineKeyboardButton('☕ ᴏᴡɴᴇʀ', url=f"https://t.me/justthetech"), 
-                     InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ☕', url=f"https://t.me/robotmusicupdate")
+                     InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ☕', url=f"https://t.me/robotprojectx")
                     ], 
                     [InlineKeyboardButton(text = '◀ 𝘽𝘼𝘾𝙆', callback_data = f"help+{pos-1}")] 
                   ]
@@ -108,7 +108,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "⚙️ ᴜᴘᴅᴀᴛᴇ ", url=f"https://t.me/robotmusicupdate"
+                        "⚙️ ᴜᴘᴅᴀᴛᴇ ", url=f"https://t.me/robotprojectx"
                     )
                 ]
             ]
@@ -147,7 +147,7 @@ async def reload(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "☕ ᴜᴘᴅᴀᴛᴇ ☕", url=f"https://t.me/robotmusicupdate"
+                        "☕ ᴜᴘᴅᴀᴛᴇ ☕", url=f"https://t.me/robotprojectx"
                     )
                 ]
             ]
